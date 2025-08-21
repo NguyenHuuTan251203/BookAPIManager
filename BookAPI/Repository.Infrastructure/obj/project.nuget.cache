@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kFofAwYbpB8=",
+  "dgSpecHash": "Ti0ukt7VdIA=",
   "success": true,
-  "projectFilePath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.Infrastructure\\Repository.Infrastructure.csproj",
+  "projectFilePath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Infrastructure\\Repository.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",

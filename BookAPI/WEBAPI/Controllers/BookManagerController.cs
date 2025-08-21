@@ -30,11 +30,8 @@ namespace WEBAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create( Book book)
+        public async Task<IActionResult> Create(Book book)
         {
-            // TODO: Create new book
-            //return CreatedAtAction(nameof(GetById), new { id = 1 }, new { message = "Book created" });
-            //return Ok(await _inMemoryRepository.CreatNewBook(book));
             Book book1 = new Book()
             {
                 Id = Guid.NewGuid(),
@@ -42,26 +39,24 @@ namespace WEBAPI.Controllers
                 Author = "Robert C. Martin",
                 Price = 39.99m,
                 PublishedDate = new DateTime(2017, 9, 20),
-                MyProperty = new List<string> { "hay","dep" }
+                MyProperty = new List<string> { "hay", "dep" }
             };
             await _inMemoryRepository.CreatNewBook(book);
             return Ok();
         }
 
-        // PUT: api/BookManager/{id}
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] object book)
+        public  async Task<IActionResult> Update([FromBody] Book book)
         {
-            // TODO: Update book by id
-            return Ok(new { message = $"Book with id {id} updated" });
+            await _inMemoryRepository.UpdateBook(book);
+            return Ok();
         }
 
-        // DELETE: api/BookManager/{id}
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            // TODO: Delete book by id
-            return Ok(new { message = $"Book with id {id} deleted" });
+            int count_delete = await _inMemoryRepository.DeleteBook(id);
+            return count_delete == 0 ? NotFound() : Ok());
         }
     }
 }

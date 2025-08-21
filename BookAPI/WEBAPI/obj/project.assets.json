@@ -661,11 +661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\WEBAPI\\WEBAPI.csproj",
+      "projectUniqueName": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\WEBAPI\\WEBAPI.csproj",
       "projectName": "WEBAPI",
-      "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\WEBAPI\\WEBAPI.csproj",
+      "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\WEBAPI\\WEBAPI.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\WEBAPI\\obj\\",
+      "outputPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\WEBAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -685,8 +685,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.Infrastructure\\Repository.Infrastructure.csproj": {
-              "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.Infrastructure\\Repository.Infrastructure.csproj"
+            "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Infrastructure\\Repository.Infrastructure.csproj": {
+              "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Infrastructure\\Repository.Infrastructure.csproj"
             }
           }
         }

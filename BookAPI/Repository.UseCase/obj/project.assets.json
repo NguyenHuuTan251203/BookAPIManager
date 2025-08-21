@@ -623,11 +623,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.UseCase\\Repository.UseCase.csproj",
+      "projectUniqueName": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\Repository.UseCase.csproj",
       "projectName": "Repository.UseCase",
-      "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.UseCase\\Repository.UseCase.csproj",
+      "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\Repository.UseCase.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.UseCase\\obj\\",
+      "outputPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -647,8 +647,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.Entity\\Repository.Entity.csproj": {
-              "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPI\\Repository.Entity\\Repository.Entity.csproj"
+            "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Entity\\Repository.Entity.csproj": {
+              "projectPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Entity\\Repository.Entity.csproj"
             }
           }
         }
