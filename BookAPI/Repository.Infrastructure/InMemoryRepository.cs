@@ -1,7 +1,7 @@
 ﻿using MongoDB.Driver;
 using Repository.Entity;
 using Repository.UseCase;
-
+//using Repository.UseCase
 namespace Repository.Infrastructure
 {
     public class InMemoryRepository : IRepositoryBookManager
@@ -14,7 +14,7 @@ namespace Repository.Infrastructure
         }
         public async Task CreatNewBook(Book book)
         {
-            await collection.InsertOneAsync(book);
+                await collection.InsertOneAsync(book);
         }
 
         public async Task<int> DeleteBook(Guid id)

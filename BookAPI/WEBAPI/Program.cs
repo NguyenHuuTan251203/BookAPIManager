@@ -1,5 +1,6 @@
 using Repository.Infrastructure;
 using Repository.UseCase;
+using Repository.UseCase.Validation;
 namespace WEBAPI
 {
     public class Program
@@ -12,6 +13,7 @@ namespace WEBAPI
 
             builder.Services.AddControllers();
             builder.Services.AddSingleton<IRepositoryBookManager,InMemoryRepository>();
+            builder.Services.AddSingleton<IValidate, ValidDataBook>();
             builder.Services.AddSingleton<InMemoryRepository>();
 
             builder.Services.AddSingleton(new RepositoryMongodb(new MongodbOptions()
