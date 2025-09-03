@@ -16,6 +16,7 @@ namespace WEBAPI.Controllers
         {
             _inMemoryRepository = inMemoryRepository;
         }
+
         [HttpGet]
         public async Task<List<Book>> GetAll()
         {
@@ -26,37 +27,29 @@ namespace WEBAPI.Controllers
         public async Task<IActionResult> GetById(Guid id)
         {
             var book = await _inMemoryRepository.GetBookById(id);
-            return book == null ? NotFound() : Ok();
+            return book == null ? NotFound("NOT FOUND") : Ok(book);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Book book)
+        public async Task<IActionResult> Create( Book book)
         {
-            Book book1 = new Book()
-            {
-                Id = Guid.NewGuid(),
-                Title = "Clean Architecture",
-                Author = "Robert C. Martin",
-                Price = 39.99m,
-                PublishedDate = new DateTime(2017, 9, 20),
-                MyProperty = new List<string> { "hay", "dep" }
-            };
-            await _inMemoryRepository.CreatNewBook(book);
-            return Ok();
+            book.Id = Guid.NewGuid();
+            var rs = await _inMemoryRepository.CreatNewBook(book);
+            return rs == null ? NotFound() : Ok(book);
         }
 
-        [HttpPut("{id}")]
-        public  async Task<IActionResult> Update([FromBody] Book book)
+        [HttpPut]
+        public async Task<IActionResult> Update( Book book)
         {
-            await _inMemoryRepository.UpdateBook(book);
-            return Ok();
+            var rs = await _inMemoryRepository.UpdateBook(book);
+            return rs == null ? NotFound() : Ok("Update successful");
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             int count_delete = await _inMemoryRepository.DeleteBook(id);
-            return count_delete == 0 ? NotFound() : Ok());
+            return count_delete == 0 ? NotFound() : Ok();
         }
     }
 }

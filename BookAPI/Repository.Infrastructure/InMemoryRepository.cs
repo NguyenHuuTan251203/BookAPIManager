@@ -1,7 +1,6 @@
 ﻿using MongoDB.Driver;
 using Repository.Entity;
 using Repository.UseCase;
-//using Repository.UseCase
 namespace Repository.Infrastructure
 {
     public class InMemoryRepository : IRepositoryBookManager
@@ -12,9 +11,10 @@ namespace Repository.Infrastructure
         {
             collection = repositoryMongodb.getCollection();
         }
-        public async Task CreatNewBook(Book book)
+        public async Task<Book> CreatNewBook(Book book)
         {
-                await collection.InsertOneAsync(book);
+            await collection.InsertOneAsync(book);
+            return await GetBookById(book.Id);
         }
 
         public async Task<int> DeleteBook(Guid id)
@@ -36,10 +36,10 @@ namespace Repository.Infrastructure
             return await collection.Find(filter).FirstOrDefaultAsync();
         }
 
-        public async Task UpdateBook(Book bookToUpdate)
+        public async Task<Book> UpdateBook(Book bookToUpdate)
         {
             var filter = Builders<Book>.Filter.Eq(book => book.Id, bookToUpdate.Id);
-            await collection.FindOneAndReplaceAsync(filter,bookToUpdate);
+            return await collection.FindOneAndReplaceAsync(filter, bookToUpdate);
         }
     }
 }

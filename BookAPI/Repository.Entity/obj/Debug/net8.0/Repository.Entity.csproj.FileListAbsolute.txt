@@ -10,3 +10,16 @@ D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPI\Repository.Entity\obj\Debug\net8.
 D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.pdb
 D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPI\Repository.Entity\obj\Debug\net8.0\ref\Repository.Entity.dll
 D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.csproj.AssemblyReference.cache
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\bin\Debug\net8.0\Repository.Entity.deps.json
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\bin\Debug\net8.0\Repository.Entity.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\bin\Debug\net8.0\Repository.Entity.pdb
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.csproj.AssemblyReference.cache
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.AssemblyInfoInputs.cache
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.AssemblyInfo.cs
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.csproj.CoreCompileInputs.cache
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.sourcelink.json
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\refint\Repository.Entity.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\Repository.Entity.pdb
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\Repository.Entity\obj\Debug\net8.0\ref\Repository.Entity.dll

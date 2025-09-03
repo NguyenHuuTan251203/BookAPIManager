@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\repository.usecase\\validation\\ivalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|solutionrelative:repository.usecase\\validation\\ivalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{401676DC-B3C3-4E6F-9DF9-8733D15C187B}|Repository.Infrastructure\\Repository.Infrastructure.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\repository.infrastructure\\inmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{401676DC-B3C3-4E6F-9DF9-8733D15C187B}|Repository.Infrastructure\\Repository.Infrastructure.csproj|solutionrelative:repository.infrastructure\\inmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D3E6633-9ED5-43A6-A193-87930AC4F808}|WEBAPI\\WEBAPI.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\webapi\\controllers\\bookmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D3E6633-9ED5-43A6-A193-87930AC4F808}|WEBAPI\\WEBAPI.csproj|solutionrelative:webapi\\controllers\\bookmanagercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\repository.usecase\\validation\\validdatabook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|solutionrelative:repository.usecase\\validation\\validdatabook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\repository.usecase\\repositorybookmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|solutionrelative:repository.usecase\\repositorybookmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\repository.usecase\\validation\\ivalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|solutionrelative:repository.usecase\\validation\\ivalidate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{401676DC-B3C3-4E6F-9DF9-8733D15C187B}|Repository.Infrastructure\\Repository.Infrastructure.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\repository.infrastructure\\inmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{401676DC-B3C3-4E6F-9DF9-8733D15C187B}|Repository.Infrastructure\\Repository.Infrastructure.csproj|solutionrelative:repository.infrastructure\\inmemoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|d:\\code\\.net\\code\\hocweb\\leetcode-test\\bookapimanager\\bookapi\\repository.usecase\\repositorybookmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCA2A5F6-E960-4342-AF3F-FFFF6731221A}|Repository.UseCase\\Repository.UseCase.csproj|solutionrelative:repository.usecase\\repositorybookmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,52 +58,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "InMemoryRepository.cs",
-              "DocumentMoniker": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Infrastructure\\InMemoryRepository.cs",
-              "RelativeDocumentMoniker": "Repository.Infrastructure\\InMemoryRepository.cs",
-              "ToolTip": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Infrastructure\\InMemoryRepository.cs",
-              "RelativeToolTip": "Repository.Infrastructure\\InMemoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BookManagerController.cs",
+              "DocumentMoniker": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\WEBAPI\\Controllers\\BookManagerController.cs",
+              "RelativeDocumentMoniker": "WEBAPI\\Controllers\\BookManagerController.cs",
+              "ToolTip": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\WEBAPI\\Controllers\\BookManagerController.cs",
+              "RelativeToolTip": "WEBAPI\\Controllers\\BookManagerController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAuwCsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T10:32:17.051Z"
+              "WhenOpened": "2025-09-02T14:29:59.799Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "RepositoryBookManager.cs",
               "DocumentMoniker": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\RepositoryBookManager.cs",
               "RelativeDocumentMoniker": "Repository.UseCase\\RepositoryBookManager.cs",
               "ToolTip": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\RepositoryBookManager.cs",
               "RelativeToolTip": "Repository.UseCase\\RepositoryBookManager.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-23T10:32:11.066Z"
+              "WhenOpened": "2025-08-23T10:32:11.066Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "IValidate.cs",
               "DocumentMoniker": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\Validation\\IValidate.cs",
               "RelativeDocumentMoniker": "Repository.UseCase\\Validation\\IValidate.cs",
               "ToolTip": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\Validation\\IValidate.cs",
               "RelativeToolTip": "Repository.UseCase\\Validation\\IValidate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T10:28:16.535Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ValidDataBook.cs",
               "DocumentMoniker": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\Validation\\ValidDataBook.cs",
               "RelativeDocumentMoniker": "Repository.UseCase\\Validation\\ValidDataBook.cs",
               "ToolTip": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.UseCase\\Validation\\ValidDataBook.cs",
               "RelativeToolTip": "Repository.UseCase\\Validation\\ValidDataBook.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-23T10:28:16.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InMemoryRepository.cs",
+              "DocumentMoniker": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Infrastructure\\InMemoryRepository.cs",
+              "RelativeDocumentMoniker": "Repository.Infrastructure\\InMemoryRepository.cs",
+              "ToolTip": "D:\\CODE\\.NET\\code\\HocWeb\\Leetcode-test\\BookAPIManager\\BookAPI\\Repository.Infrastructure\\InMemoryRepository.cs",
+              "RelativeToolTip": "Repository.Infrastructure\\InMemoryRepository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-29T10:01:45.13Z",
               "EditorCaption": ""
             }
           ]

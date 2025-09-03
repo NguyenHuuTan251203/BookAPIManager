@@ -11,8 +11,12 @@ namespace Repository.Infrastructure
         public RepositoryMongodb(MongodbOptions mongodbOptions)
         {
             _mongodbOptions = mongodbOptions;
-            var client = new MongoClient(_mongodbOptions?.ConnectionString);
-            var database = client.GetDatabase(_mongodbOptions?.DatabaseName);
+            var client = new MongoClient(_mongodbOptions.ConnectionString);
+            var database = client.GetDatabase(_mongodbOptions.DatabaseName);
+           if(!database.ListCollectionNames(new ListCollectionNamesOptions { Filter = new BsonDocument("name", "Book") } ).Any())
+            {
+                throw new InvalidOperationException($"Collection doesn't exist ");
+            }
             collection = database.GetCollection<Book>("Book");
         }
 

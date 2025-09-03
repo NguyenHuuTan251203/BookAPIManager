@@ -5,8 +5,8 @@ namespace Repository.UseCase
     {
         public Task<List<Book>> GetAllBook();
         public Task<Book> GetBookById(Guid id);
-        public Task CreatNewBook(Book book);
-        public Task UpdateBook(Book book);
+        public Task<Book> CreatNewBook(Book book);
+        public Task<Book> UpdateBook(Book book);
         public Task<int> DeleteBook(Guid id);
     }
 }
