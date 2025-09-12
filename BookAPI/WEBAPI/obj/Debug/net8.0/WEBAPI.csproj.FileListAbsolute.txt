@@ -83,3 +83,12 @@ D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\obj\Debug\n
 D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\obj\Debug\net8.0\WEBAPI.csproj.Up2Date
 D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\obj\Debug\net8.0\WEBAPI.genruntimeconfig.cache
 D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\obj\Debug\net8.0\ref\WEBAPI.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\FluentValidation.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\MediatR.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\MediatR.Contracts.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\obj\Debug\net8.0\swae.build.ex.cache
+D:\CODE\.NET\code\HocWeb\Leetcode-test\BookAPIManager\BookAPI\WEBAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

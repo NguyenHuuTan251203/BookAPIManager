@@ -1,6 +1,9 @@
 using Repository.Infrastructure;
-using Repository.UseCase;
-using Repository.UseCase.Validation;
+using Repository.UseCase.Interface;
+using Repository.UseCase.Features.Books.Commands.CreateBook;
+using Repository.UseCase.Features.Books.Commands.UpdateBook;
+using Repository.UseCase.Features.Books.Commands.DeleteBook;
+using FluentValidation;
 namespace WEBAPI
 {
     public class Program
@@ -10,10 +13,25 @@ namespace WEBAPI
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
             builder.Services.AddControllers();
-            builder.Services.AddSingleton<IRepositoryBookManager,InMemoryRepository>();
-            builder.Services.AddSingleton<IValidate, ValidDataBook>();
+
+            // Register validation
+            //builder.Services.AddValidatorsFromAssemblyContaining<CreateBookCommandValidator>();
+            //builder.Services.AddValidatorsFromAssemblyContaining<UpdateBookCommandValidator>();
+            builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+
+
+
+            builder.Services.AddMediatR(cfg =>
+                {
+                    cfg.RegisterServicesFromAssemblyContaining<CreateBookCommand>();
+                    cfg.RegisterServicesFromAssemblyContaining<UpdateBookCommand>();
+                    cfg.RegisterServicesFromAssemblyContaining<DeleteBookCommand>();
+                });
+
+
+            //Infrastructure
+            builder.Services.AddSingleton<IRepositoryBookManager, InMemoryRepository>();
             builder.Services.AddSingleton<InMemoryRepository>();
 
             builder.Services.AddSingleton(new RepositoryMongodb(new MongodbOptions()

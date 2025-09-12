@@ -29,7 +29,7 @@
     "Parameters": [
       {
         "Name": "book",
-        "Type": "Repository.Entity.Book",
+        "Type": "Repository.UseCase.Features.Books.Commands.CreateBook.CreateBookCommand",
         "IsRequired": true
       }
     ],

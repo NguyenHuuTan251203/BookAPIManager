@@ -1,6 +1,6 @@
 ﻿using MongoDB.Driver;
 using Repository.Entity;
-using Repository.UseCase;
+using Repository.UseCase.Interface;
 namespace Repository.Infrastructure
 {
     public class InMemoryRepository : IRepositoryBookManager
@@ -11,7 +11,7 @@ namespace Repository.Infrastructure
         {
             collection = repositoryMongodb.getCollection();
         }
-        public async Task<Book> CreatNewBook(Book book)
+        public async Task<Book> CreateNewBook(Book book)
         {
             await collection.InsertOneAsync(book);
             return await GetBookById(book.Id);

@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using MediatR;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Repository.Entity;
 using Repository.Infrastructure;
+using Repository.UseCase.Features.Books.Commands.CreateBook;
 
 namespace WEBAPI.Controllers
 {
@@ -11,10 +13,12 @@ namespace WEBAPI.Controllers
     public class BookManagerController : ControllerBase
     {
         private readonly InMemoryRepository _inMemoryRepository;
+        private readonly IMediator _mediator;
 
-        public BookManagerController(InMemoryRepository inMemoryRepository)
+        public BookManagerController(InMemoryRepository inMemoryRepository,IMediator mediator)
         {
             _inMemoryRepository = inMemoryRepository;
+            _mediator = mediator;
         }
 
         [HttpGet]
@@ -31,11 +35,11 @@ namespace WEBAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create( Book book)
+        public async Task<IActionResult> Create( CreateBookCommand book)
         {
-            book.Id = Guid.NewGuid();
-            var rs = await _inMemoryRepository.CreatNewBook(book);
-            return rs == null ? NotFound() : Ok(book);
+            //var rs = await _inMemoryRepository.CreateNewBook(book);
+            var rs = await _mediator.Send(book);
+            return Ok(rs);
         }
 
         [HttpPut]

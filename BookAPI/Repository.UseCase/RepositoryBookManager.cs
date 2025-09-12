@@ -1,23 +1,19 @@
 ﻿using Repository.Entity;
-using Repository.UseCase.Validation;
+using Repository.UseCase.Interface;
 
 namespace Repository.UseCase
 {
     class RepositoryBookManager
     {
         private readonly IRepositoryBookManager _bookManager;
-        private readonly IValidate _validate;
 
-        public RepositoryBookManager(IRepositoryBookManager bookManager ,IValidate validate)
+        public RepositoryBookManager(IRepositoryBookManager bookManager )
         {
             _bookManager = bookManager;
-            _validate = validate;
         }
         public void CreatNewBook(Book book)
         {
-            if (!_validate.CheckDataBook(book))
-                throw new ArgumentException("Invalid Book");
-            _bookManager.CreatNewBook(book);
+            _bookManager.CreateNewBook(book);
 
         }
 
