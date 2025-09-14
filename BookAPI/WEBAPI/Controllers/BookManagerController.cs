@@ -5,55 +5,51 @@ using Microsoft.AspNetCore.Mvc;
 using Repository.Entity;
 using Repository.Infrastructure;
 using Repository.UseCase.Features.Books.Commands.CreateBook;
+using Repository.UseCase.Features.Books.Commands.DeleteBook;
+using Repository.UseCase.Features.Books.Commands.UpdateBook;
+using Repository.UseCase.Features.Books.Queries.GetAllBooks;
+using Repository.UseCase.Features.Books.Queries.GetById;
+using Repository.UseCase.Interface;
 
 namespace WEBAPI.Controllers
 {
     [Route("/api/bookmanager")]
     [ApiController]
-    public class BookManagerController : ControllerBase
+    public class BookManagerController(IMediator mediator) : ControllerBase
     {
-        private readonly InMemoryRepository _inMemoryRepository;
-        private readonly IMediator _mediator;
-
-        public BookManagerController(InMemoryRepository inMemoryRepository,IMediator mediator)
-        {
-            _inMemoryRepository = inMemoryRepository;
-            _mediator = mediator;
-        }
-
         [HttpGet]
         public async Task<List<Book>> GetAll()
         {
-            return await _inMemoryRepository.GetAllBook();
+            return await mediator.Send(new GetAllBooksQuery());
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(Guid id)
         {
-            var book = await _inMemoryRepository.GetBookById(id);
+            var book = await mediator.Send(new GetByIdBookQuery() { Id  = id});
             return book == null ? NotFound("NOT FOUND") : Ok(book);
         }
 
         [HttpPost]
         public async Task<IActionResult> Create( CreateBookCommand book)
         {
-            //var rs = await _inMemoryRepository.CreateNewBook(book);
-            var rs = await _mediator.Send(book);
+            var rs = await mediator.Send(book);
             return Ok(rs);
         }
 
         [HttpPut]
-        public async Task<IActionResult> Update( Book book)
+        public async Task<IActionResult> Update( UpdateBookCommand book)
         {
-            var rs = await _inMemoryRepository.UpdateBook(book);
+            var rs = await mediator.Send(book);
             return rs == null ? NotFound() : Ok("Update successful");
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            int count_delete = await _inMemoryRepository.DeleteBook(id);
-            return count_delete == 0 ? NotFound() : Ok();
+            
+            await mediator.Send( new DeleteBookCommand {Id = id });
+            return NoContent();
         }
     }
 }

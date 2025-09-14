@@ -45,7 +45,7 @@
     "Parameters": [
       {
         "Name": "book",
-        "Type": "Repository.Entity.Book",
+        "Type": "Repository.UseCase.Features.Books.Commands.UpdateBook.UpdateBookCommand",
         "IsRequired": true
       }
     ],

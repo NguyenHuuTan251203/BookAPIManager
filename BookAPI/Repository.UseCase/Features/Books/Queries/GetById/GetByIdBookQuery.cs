@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Repository.UseCase.Features.Books.Queries.GetById
+{
+   public class GetByIdBookQuery : IRequest<Book>
+    {
+        public Guid Id { get; set; }
+    }
+}

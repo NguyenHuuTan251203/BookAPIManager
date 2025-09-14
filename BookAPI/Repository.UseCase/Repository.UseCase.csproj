@@ -16,9 +16,4 @@
     <ProjectReference Include="..\Repository.Entity\Repository.Entity.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\Books\Queries\GetById\" />
-    <Folder Include="Features\Books\Queries\GetAllBooks\" />
-  </ItemGroup>
-
 </Project>

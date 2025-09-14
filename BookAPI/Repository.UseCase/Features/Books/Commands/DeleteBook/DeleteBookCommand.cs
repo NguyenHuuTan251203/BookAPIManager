@@ -1,6 +1,6 @@
 ﻿namespace Repository.UseCase.Features.Books.Commands.DeleteBook
 {
-    public class DeleteBookCommand : IRequest<string>
+    public class DeleteBookCommand : IRequest<Unit>
     { 
         public Guid Id { get; set; }
      
